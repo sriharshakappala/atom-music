@@ -66,11 +66,11 @@ class AtomMusicView extends View
 
   pulsing: ->
     setInterval ( ) =>
-      $(@).addClass('pulse')
+      # $(@).addClass('pulse')
       @moveTicker()
-      setTimeout ( ) =>
-        $(@).removeClass('pulse')
-      , 2000
+      # setTimeout ( ) =>
+      #   $(@).removeClass('pulse')
+      # , 2000
     , 4000
 
   songEnded: ( e ) =>
