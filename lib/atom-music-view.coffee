@@ -25,8 +25,8 @@ class AtomMusicView extends View
             @tag 'input', style:'display: none;', type:'file', multiple:true, accept:"audio/mp3", outlet:"musicFileSelectionInput"
             @span 'Open Music Files', class:'btn icon icon-file-directory',
         @div class:'inline-block playing-now-container', =>
-          @span 'Now Playing : ', class:'highlight'
-          @span 'Nothing to play', class:'highlight', outlet:'nowPlayingTitle'
+          @span 'Now Playing : '
+          @span 'Nothing to play', outlet:'nowPlayingTitle'
           @div id:'ticker',outlet:'ticker'
       @div class:'atom-music-list-container'
       @tag 'audio', class:'audio-player', outlet:'audio_player', =>
